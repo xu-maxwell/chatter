@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Chat</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .chat-area {
+            height: 300px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-200 h-screen flex flex-col items-center justify-center">
+    <div class="max-w-md w-full p-8 bg-white rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold text-center mb-4">Welcome user!</h2>
+        <div class="chat-area border border-gray-300 rounded-lg mb-4 p-4">
+            <!-- Messages will be displayed here -->
+            <div class="mb-2">
+                <span class="font-semibold">User1:</span> Hello there!
+            </div>
+            <div class="mb-2">
+                <span class="font-semibold">User2:</span> Hi! How are you?
+            </div>
+            <!-- Add more messages dynamically -->
+        </div>
+        <form action="#" method="POST" class="flex items-center space-x-2">
+            <input type="text" id="message" name="message" class="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 focus:ring-2 focus:outline-none" placeholder="Type your message...">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">Send</button>
+        </form>
+        <div class="mt-4 text-center">
+            <a href="login.html" class="text-red-500 font-medium hover:underline">Log Out</a>
+        </div>
+    </div>
+</body>
+
+</html>
